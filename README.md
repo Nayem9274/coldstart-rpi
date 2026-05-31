@@ -1,6 +1,6 @@
 # A Cold-Start Benchmark and Architectural Diagnosis for RNA-Protein Interaction Prediction
 
-Code and reproduction artifacts for our ICDM 2026 submission. The full
+Code and reproduction artifacts for our project. The full
 pipeline lives in `pipeline.ipynb`; pre-computed result CSVs and figures
 are in `results/`.
 
