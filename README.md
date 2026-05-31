@@ -40,7 +40,7 @@ three-seed two-dataset case study completes in ~20–24 minutes.
 This project uses the same benchmark datasets and pre-computed RNA-FM /
 ProtT5 embeddings as **ZHMolGraph** (RNA–protein interaction prediction
 using network-guided deep learning — Liu et al., *Communications Biology*, 2025,  
-DOI: [10.1038/s42003-025-07279-5](https://doi.org/10.1038/s42003-025-07279-5)).
+DOI: [10.1038/s42003-025-07694-9](https://doi.org/10.1038/s42003-025-07694-9)).
 
 
 Download from Zenodo: https://zenodo.org/records/14747845
