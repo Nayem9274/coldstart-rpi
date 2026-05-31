@@ -37,5 +37,27 @@ three-seed two-dataset case study completes in ~20–24 minutes.
 
 ## Data
 
-We use ZHMolGraph's released benchmarks and embeddings. See `data/README.md`.
+This project uses the same benchmark datasets and pre-computed RNA-FM /
+ProtT5 embeddings as ZHMolGraph (Liu et al., Communications Biology 2025).
+
+Download from Zenodo: https://zenodo.org/records/14747845
+
+Expected layout after extracting into this directory:
+
+    data/
+      NPInter2/
+        interactions.csv
+        rna_embeddings.pkl
+        prot_embeddings.pkl
+      RPI7317/
+        interactions.csv
+        rna_embeddings.pkl
+        prot_embeddings.pkl
+      TheNovel/
+        npinter5_pairs.csv
+        rna_embeddings.pkl
+        prot_embeddings.pkl
+
+The notebook's `BASE` variable points to this folder.
+
 
