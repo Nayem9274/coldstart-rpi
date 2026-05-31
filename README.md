@@ -1,23 +1,23 @@
 # A Cold-Start Benchmark and Architectural Diagnosis for RNA-Protein Interaction Prediction
 
-Code and reproduction artifacts for our project. The full
-pipeline lives in `pipeline.ipynb`; pre-computed result CSVs and figures
-are in `results/`.
+This repository contains the code and experimental pipeline for our study on cold-start RNA–protein interaction prediction.
 
-## Setup
+## Notebook Preview
 
-```bash
-git clone <this-repo>
-cd coldstart-rpi
-pip install -r requirements.txt
-```
+GitHub may occasionally fail to render the main Jupyter notebook and show an error such as:
 
-Then download embeddings into `data/` following `data/README.md`.
+> An error occurred  
+> Using nbformat v5.10.4 and nbconvert v7.17.1
+
+If this happens, please use:
+
+- **nbviewer:** https://nbviewer.org/github/Nayem9274/coldstart-rpi/blob/main/pipeline.ipynb
+- **Google Colab:** https://colab.research.google.com/github/Nayem9274/coldstart-rpi/blob/main/pipeline.ipynb
+
 
 ## Reproducing the paper
 
-Open `pipeline.ipynb` and run the cells listed below. Cells 1–30
-define data loaders, models, training, and metrics — run them first.
+Open `pipeline.ipynb` and run the cells listed below. Cells 1–30 define data loaders, models, training, and metrics — run them first.
 
 ## Results already included
 
