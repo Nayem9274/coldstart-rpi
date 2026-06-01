@@ -35,6 +35,20 @@ All experiments were run in a Kaggle GPU environment (NVIDIA Tesla T4).
 A complete five-fold run for one model takes ~1–2 minutes; a full
 three-seed two-dataset case study completes in ~20–24 minutes.
 
+### Trainable parameter counts
+
+| Model             | Parameters |
+|-------------------|------------|
+| PairMLP           | 1,082,881  |
+| PairMLP-Wide      | 3,312,129  |
+| PairMLP-Deep      | 2,099,841  |
+| PairMLP-Cross     | 1,610,241  |
+| DegGate           | 2,267,334  |
+| WeightedBipartite | 2,265,603  |
+| CoNeighbor        | 2,004,483  |
+| ProtoContrast     | 2,531,012  |
+| GraphSAGE-2L      | 2,198,530  |
+
 ## Data
 
 This project uses the same benchmark datasets and pre-computed RNA-FM /
