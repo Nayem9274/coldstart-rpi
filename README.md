@@ -17,7 +17,7 @@ If this happens, please use:
 
 ## Reproducing the paper
 
-Open `pipeline.ipynb` and run the cells listed below. Cells 1–30 define data loaders, models, training, and metrics — run them first.
+Open `pipeline.ipynb` and run the cells listed below. The cells define data loaders, models, training, and metrics — run them first.
 
 ## Results already included
 
