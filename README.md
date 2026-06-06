@@ -17,7 +17,9 @@ If this happens, please use:
 
 ## Reproducing the paper
 
-Open `pipeline.ipynb` and run the cells listed below. The cells define data loaders, models, training, and metrics — run them first.
+Open `pipeline.ipynb` and run the notebook sequentially. The notebook defines the data loaders, model families, cold-start split builders, training loops, metrics, TheNovel evaluation, and case-study analyses.
+
+Before running, set the `BASE` variable in the notebook to the folder containing the extracted benchmark data.
 
 ## Results already included
 
@@ -31,9 +33,7 @@ under `results/`. They can be inspected without rerunning training.
 
 ## Compute
 
-All experiments were run in a Kaggle GPU environment (NVIDIA Tesla T4).
-A complete five-fold run for one model takes ~1–2 minutes; a full
-three-seed two-dataset case study completes in ~20–24 minutes.
+Experiments were run in Kaggle GPU environments providing NVIDIA Tesla T4 GPUs. A complete five-fold model/protocol run takes approximately 1--2 minutes; a complete three-seed, two-dataset case study over the analyzed models takes approximately 20--24 minutes. Runtime may vary depending on GPU availability, caching, and whether intermediate result files are reused.
 
 ### Trainable parameter counts
 
@@ -51,30 +51,13 @@ three-seed two-dataset case study completes in ~20–24 minutes.
 
 ## Data
 
-This project uses the same benchmark datasets and pre-computed RNA-FM /
-ProtT5 embeddings as **ZHMolGraph** (RNA–protein interaction prediction
-using network-guided deep learning — Liu et al., *Communications Biology*, 2025,  
-DOI: [10.1038/s42003-025-07694-9](https://doi.org/10.1038/s42003-025-07694-9)).
+This project uses the same benchmark datasets and precomputed RNA-FM / ProtT5 embeddings as **ZHMolGraph** (RNA-protein interaction prediction using network-guided deep learning — Liu et al., *Communications Biology*, 2025, DOI: [10.1038/s42003-025-07694-9](https://doi.org/10.1038/s42003-025-07694-9)).
 
+Download options:
 
-Download from Zenodo: https://zenodo.org/records/14747845
+* **Zenodo:** https://zenodo.org/records/14747845
+* **Kaggle mirror/direct dataset:** https://kaggle.com/datasets/efa4ca31068f62a0dd81585ea2f99a879a8afea8d5220e98ce8f6e75bfbbbf22
 
-Expected layout after extracting into this directory:
-
-    data/
-      NPInter2/
-        interactions.csv
-        rna_embeddings.pkl
-        prot_embeddings.pkl
-      RPI7317/
-        interactions.csv
-        rna_embeddings.pkl
-        prot_embeddings.pkl
-      TheNovel/
-        npinter5_pairs.csv
-        rna_embeddings.pkl
-        prot_embeddings.pkl
-
-The notebook's `BASE` variable points to this folder.
+The notebook's `BASE` variable should point to the extracted data folder.
 
 
